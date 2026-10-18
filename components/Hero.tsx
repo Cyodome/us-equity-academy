@@ -40,25 +40,25 @@ export function Hero() {
 
   const s = scenes[i];
   return (
-    <div className="relative" aria-label="株価＝EPS×PERの例">
+    <div className="@container relative" aria-label="株価＝EPS×PERの例">
       <motion.p key={s.cap} initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} className="mb-3 text-[0.82rem] text-hero-ink/70">
         {s.cap}
       </motion.p>
-      <div className="grid grid-cols-[auto_auto_auto_auto_auto] items-end gap-x-3 gap-y-1 sm:gap-x-5">
+      <div className="grid grid-cols-[auto_auto_auto_auto_auto] items-end gap-x-[2.2cqw] gap-y-1">
         <span className="text-[0.75rem] text-hero-ink/60">株価</span>
         <span />
         <span className="text-[0.75rem] text-hero-ink/60">EPS</span>
         <span />
         <span className="text-[0.75rem] text-hero-ink/60">PER</span>
-        <span className="serif text-[2.1rem] font-extrabold leading-none text-white sm:text-[3.4rem]">
+        <span className="serif text-[clamp(1.2rem,7.2cqw,3.4rem)] font-extrabold leading-none text-white">
           <Num v={price as never} fmt={(n) => `$${n.toFixed(2)}`} />
         </span>
-        <span className="serif text-[1.6rem] text-amber sm:text-[2.4rem]">＝</span>
-        <span className="serif text-[2.1rem] font-extrabold leading-none text-hero-ink sm:text-[3.4rem]">
+        <span className="serif text-[clamp(0.9rem,4.6cqw,2.4rem)] text-amber">＝</span>
+        <span className="serif text-[clamp(1.2rem,7.2cqw,3.4rem)] font-extrabold leading-none text-hero-ink">
           <Num v={eps} fmt={(n) => `$${n.toFixed(2)}`} />
         </span>
-        <span className="serif text-[1.6rem] text-amber sm:text-[2.4rem]">×</span>
-        <span className="serif text-[2.1rem] font-extrabold leading-none text-hero-ink sm:text-[3.4rem]">
+        <span className="serif text-[clamp(0.9rem,4.6cqw,2.4rem)] text-amber">×</span>
+        <span className="serif text-[clamp(1.2rem,7.2cqw,3.4rem)] font-extrabold leading-none text-hero-ink">
           <Num v={per} fmt={(n) => `${n.toFixed(1)}x`} />
         </span>
       </div>

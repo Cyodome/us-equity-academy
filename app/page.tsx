@@ -20,7 +20,7 @@ export default function Home() {
             backgroundSize: "44px 44px",
           }}
         />
-        <div className="relative mx-auto grid max-w-[1200px] gap-10 px-5 pb-14 pt-12 sm:px-8 md:grid-cols-[1.05fr_1fr] md:items-end md:pb-20 md:pt-20">
+        <div className="relative mx-auto grid max-w-[1200px] gap-10 px-5 pb-14 pt-12 sm:px-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)] lg:items-end md:pb-20 md:pt-20">
           <div>
             <h1 className="serif text-[2.3rem] font-extrabold leading-[1.25] text-white sm:text-[3.1rem]">
               米国株投資
@@ -37,7 +37,7 @@ export default function Home() {
               <HomeProgress variant="resume" />
             </div>
           </div>
-          <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-5 sm:p-7">
+          <div className="min-w-0 rounded-2xl border border-white/10 bg-white/[0.04] p-5 sm:p-7">
             <Hero />
           </div>
         </div>

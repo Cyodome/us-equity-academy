@@ -20,7 +20,7 @@ export function CompanyChip({ id, children }: { id: CompanyId; children: React.R
       </button>
       <span
         role="tooltip"
-        className="pointer-events-none absolute bottom-[calc(100%+6px)] left-1/2 z-30 hidden w-60 -translate-x-1/2 rounded-xl border border-line bg-surface p-3 text-[0.76rem] leading-relaxed text-text opacity-0 shadow-lg transition-opacity duration-150 md:block group-hover:opacity-100 group-focus-within:opacity-100"
+        className="pointer-events-none absolute bottom-[calc(100%+6px)] left-1/2 z-30 hidden w-60 -translate-x-1/2 rounded-xl border border-line bg-surface p-3 text-[0.76rem] leading-relaxed text-text shadow-lg md:group-hover:block md:group-focus-within:block"
       >
         <span className="mb-1 flex items-baseline justify-between">
           <span className="font-bold text-ink">{c.name}</span>
